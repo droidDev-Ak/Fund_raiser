@@ -1,0 +1,143 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  top:-10%;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(20%);
+  /* background-color: rgba(0, 0, 0, 0.622); */
+
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+    animation: back_change forwards ;
+    animation-duration: 3s;
+    animation-delay: 0s;
+
+
+
+      
+} 
+    
+    
+    
+    
+    
+    
+    @keyframes back_change {
+      from{
+
+        /* background-color: #bb9bfc; */
+        /* background-color: #dcd803; */
+        background-image: url('/Users/apple/WebDev2/Startup_page/src/Components/im2.png');
+
+
+      }
+      to{
+        background-image: url('/Users/apple/WebDev2/Startup_page/src/Components/im.jpg');
+        background-repeat:space;
+     
+    }
+  }
+    
+    
+
+
+.campaigns-section
+{
+  background-color: black;
+    text-align: center;
+    border-radius: 10px; 
+    width: 90vw;
+    height: 75vh;
+    padding: 30px;
+    margin: 30px;
+    display: grid;
+    overflow: scroll;
+
+    border: 2px solid cadetblue;
+    box-shadow: 7px 10px 15px black;
+  }
+  
+
+  
+  .head_div{
+    display: flex;
+    color:white;
+    text-align: center;
+    margin-bottom:50px;
+    font-size: 60px;
+    justify-content: center;
+    animation:ani;
+    animation-duration: 1s;
+
+
+  }
+
+  .campaign-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-items: center;
+    transition: all 0.3s ease;
+    
+
+  }
+  
+  .campaign-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .campaign-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .campaign-image {
+    width: 100%;
+    height: 200px;
+    object-fit:cover;
+  }
+  
+  .campaign-card h3 {
+    font-size: 1.5rem;
+    color:black;
+    margin: 15px 0;
+  }
+  
+  .campaign-card p {
+    font-size: 1.1rem;
+    color:black;
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+  
+  .donate-button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .donate-button:hover {
+    background-color: red;
+    transform: translateY(-3px);
+  }
+
+  @keyframes ani {
+from{
+  transform: translate(100%,0);
+}
+
+to{
+  transform: translate(0,0);
+}
+  }
+
+ 
